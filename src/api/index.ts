@@ -15,7 +15,7 @@ interface NetworkResponse {
   networks: Network[];
 }
 
-const API_URL = "http://api.citybik.es/v2/";
+const API_URL = "http://api.citybik.es/v2";
 
 export const fetchNetworks = async (): Promise<Network[]> => {
   try {
