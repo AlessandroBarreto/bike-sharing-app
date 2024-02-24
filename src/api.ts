@@ -1,8 +1,14 @@
 import axios, { AxiosResponse } from "axios";
 
-interface Network {
-  id: string;
+export interface Network {
+  location: {
+    city: string;
+    country: string;
+    latitude: number;
+    longitude: number;
+  };
   name: string;
+  id: string;
 }
 
 interface NetworkResponse {
