@@ -40,7 +40,7 @@ const NetworkDescription = ({
     return (
       <>
         <h4>{`Country: ${network.location.country}`}</h4>
-        <h4>{`Networks : ${newtorksPerCountry(currentLayer)}`}</h4>
+        <h4>{`Networks : ${newtorksPerCountry(network.location.country)}`}</h4>
       </>
     );
   }
