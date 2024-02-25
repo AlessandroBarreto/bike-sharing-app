@@ -8,8 +8,6 @@ const App = () => {
     data: { networks },
   } = useNetwork();
 
-  console.log(networks);
-
   return (
     <div className="app">
       <h1>Bike Sharing App</h1>
