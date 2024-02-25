@@ -1,29 +1,26 @@
-.box-container{
-    display: flex;
+.box-container {
+  display: flex;
 }
 
-.left-side{
-    display: flex;
-    flex-direction: column;
+.left-side {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid lightblue;
 }
 
-.right-side{
-    margin: 0 10px;
-    width: 100%;
-
+.right-side {
+  margin: 0 10px;
+  width: 100%;
 }
 
-.layer{
-    cursor: pointer;
-    padding: 2px; 
-    border-radius: 2px;
+.layer {
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 2px;
+  margin-right: 5px;
 }
 
-.layer:hover{
-    background-color: lightgrey;
+.current-layer {
+  background-color: #007bff;
+  color: #fff;
 }
-
-.current-layer{
-    background-color: lightgray;
-}
-

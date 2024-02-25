@@ -19,9 +19,15 @@ const NetworkDescription = ({
   if (currentLayer === Layer.L1) {
     return (
       <>
-        <h4>{`Name: ${network.name}`}</h4>
-        <h4>{`Country: ${network.location.country}`}</h4>
-        <h4>{`City: ${network.location.city}`}</h4>
+        <h4>
+          Name: <span>{network.name}</span>
+        </h4>
+        <h4>
+          Country: <span>{network.location.country}</span>
+        </h4>
+        <h4>
+          City: <span>{network.location.city}</span>
+        </h4>
       </>
     );
   }
@@ -40,8 +46,12 @@ const NetworkDescription = ({
   if (currentLayer === Layer.L3) {
     return (
       <>
-        <h4>{`Country: ${network.location.country}`}</h4>
-        <h4>{`Networks : ${newtorksPerCountry(network.location.country)}`}</h4>
+        <h4>
+          Country: <span>{network.location.country}</span>
+        </h4>
+        <h4>
+          Networks: <span>{newtorksPerCountry(network.location.country)}</span>
+        </h4>
       </>
     );
   }

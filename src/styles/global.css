@@ -15,20 +15,24 @@
   color: #333;
 }
 
-.leaflet-container{
+.leaflet-container {
   height: 90vh;
   width: 90%;
   border-radius: 0.5rem;
 }
 
-.leaflet-popup-content{
+.leaflet-popup-content {
   width: 100%;
 }
 
-.leaflet-popup-content{
+.leaflet-popup-content {
   margin: 0.5rem;
 }
 
-li{
+li {
   font-size: 10px;
+}
+
+h4 span {
+  font-weight: normal;
 }
