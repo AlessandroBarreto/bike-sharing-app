@@ -1,6 +1,6 @@
 import { Network } from "../../../api";
 import useNetwork from "../../../hooks/useNetwork";
-import { Layer } from "..";
+import { Layer } from "../enums";
 
 interface NetworkDescriptionProps {
   network: Network;

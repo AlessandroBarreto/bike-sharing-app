@@ -2,15 +2,10 @@ import { useState } from "react";
 import { Network } from "../../api";
 import "./styles.css";
 import NetworkDescription from "./Description";
+import { Layer } from "./enums";
 
 interface BoxProps {
   network: Network;
-}
-
-export enum Layer {
-  L1 = "L1",
-  L2 = "L2",
-  L3 = "L3",
 }
 
 const Box = ({ network }: BoxProps) => {
