@@ -1,4 +1,4 @@
-// Map.tsx
+import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { Icon, LatLngTuple } from "leaflet";

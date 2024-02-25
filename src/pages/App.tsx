@@ -1,3 +1,4 @@
+import React from "react";
 import Map from "../components/Map";
 import useNetwork from "../hooks/useNetwork";
 import "../styles/global.css";
