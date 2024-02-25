@@ -1,6 +1,9 @@
 import axios, { AxiosResponse } from "axios";
 
 export interface Network {
+  company: string[];
+  href: string;
+  id: string;
   location: {
     city: string;
     country: string;
@@ -8,7 +11,6 @@ export interface Network {
     longitude: number;
   };
   name: string;
-  id: string;
 }
 
 interface NetworkResponse {

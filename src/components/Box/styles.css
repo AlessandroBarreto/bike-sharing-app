@@ -1,0 +1,28 @@
+.box-container{
+    display: flex;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side{
+    margin: 0 10px;
+    width: 100%;
+
+}
+
+.layer{
+    border: solid black 1px;
+    cursor: pointer;  
+}
+
+.layer:hover{
+    background-color: lightgrey;
+}
+
+.current-layer{
+    background-color: lightgray;
+}
+

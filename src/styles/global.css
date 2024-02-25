@@ -20,3 +20,15 @@
   width: 90%;
   border-radius: 0.5rem;
 }
+
+.leaflet-popup-content{
+  width: 100%;
+}
+
+.leaflet-popup-content{
+  margin: 0.5rem;
+}
+
+li{
+  font-size: 10px;
+}

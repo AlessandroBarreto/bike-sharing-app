@@ -2,8 +2,9 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 import { Icon, LatLngTuple } from "leaflet";
+import { Network } from "../../api";
+import Box from "../Box";
 import "leaflet/dist/leaflet.css";
-import { Network } from "../api";
 
 interface MapProps {
   networks: Network[];
@@ -12,7 +13,7 @@ interface MapProps {
 const Map = ({ networks }: MapProps) => {
   const lisbonLocation: LatLngTuple = [38.736946, -9.142685];
   const customIcon = new Icon({
-    iconUrl: require("../assets/placeholder.png"),
+    iconUrl: require("../../assets/placeholder.png"),
     iconSize: [38, 38],
   });
 
@@ -30,7 +31,9 @@ const Map = ({ networks }: MapProps) => {
             icon={customIcon}
             key={network.id}
           >
-            <Popup>{network.name}</Popup>
+            <Popup>
+              <Box network={network} />
+            </Popup>
           </Marker>
         ))}
       </MarkerClusterGroup>
