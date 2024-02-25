@@ -14,8 +14,9 @@
 }
 
 .layer{
-    border: solid black 1px;
-    cursor: pointer;  
+    cursor: pointer;
+    padding: 2px; 
+    border-radius: 2px;
 }
 
 .layer:hover{
